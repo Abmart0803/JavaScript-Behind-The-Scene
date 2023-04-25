@@ -270,3 +270,17 @@ var numProducts = 10;
 function deleteShoppingCart() {
   console.log('All products deleted');
 }
+
+const martins = {
+  firstName: 'Martins',
+  year: 1980,
+  calcAge: function () {
+    console.log(this);
+    console.log(2023 - this.year);
+  },
+  greet: () => {
+    console.log(this);
+    console.log(`Hay ${this.firstName}`);
+  },
+};
+martins.greet();
