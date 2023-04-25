@@ -252,3 +252,21 @@ function calcAge(birthYear) {
 }
 const firstName = 'Martins';
 calcAge(1993);
+
+console.log(me);
+// console.log(job);
+// console.log(year);
+
+var me = 'Martins';
+let job = 'Web Developer';
+const year = 1980;
+
+if (!numProducts) deleteShoppingCart();
+
+// const numProducts = 10;
+
+var numProducts = 10;
+
+function deleteShoppingCart() {
+  console.log('All products deleted');
+}
