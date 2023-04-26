@@ -284,3 +284,37 @@ const martins = {
   },
 };
 martins.greet();
+
+// primitive types
+let lastName2 = 'Martins';
+let oldLastName = lastName2;
+
+lastName2 = 'Abiola.';
+
+console.log(lastName2, oldLastName);
+
+//Reference types.
+const jessica = {
+  fistName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log('Before marriage:', jessica);
+console.log('After marriage:', marriedJessica);
+
+//Coppying Objects.
+const jessica2 = {
+  fistName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
+
+const jessicCopy = Object.assign({}, jessica2);
+jessicCopy.lastName = 'Steven';
+jessicCopy.family.push('Martins', 'John');
+
+console.log('Before marriage:', jessica2);
+console.log('After marriage:', jessicCopy);
